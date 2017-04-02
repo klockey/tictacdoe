@@ -5,31 +5,129 @@ $base-font-family: sans-serif;
 
 html {
   text-size-adjust: 100%;
+  height: 100%;
 }
 
 body {
   @include font-smoothing(on);
   margin: 0;
   font: $base-text-size / 1 $base-font-family;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: space-around;
+  flex-direction: column;
+  align-items: center;
+  //align-items: center;
+  // justify-content: center;
+  // al: center;
+  // background-color: green;
 }
 
-div {
+.container1{
   width: 100%;
   height: 100%;
+  align-items: center;
+//  justify-content: space-around;
+  text-align: center;
+  position: relative;
+  // display: flex;
+  // flex-direction: column;
+  // text-align: center;
+  //text-align: center;
+}
+
+.container2{
+  width: 100%;
+  height: 100%;
+  align-items: center;
+//  justify-content: space-around;
+  text-align: center;
+  // display: flex;
+  // flex-direction: column;
+  // text-align: center;
+  //text-align: center;
 }
 
 table {
   width: 200px;
   height: 200px;
   margin: 0 auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  // border-collapse: collapse;
+//  border: 1px solid black;
+}
+//
+// .flex-item{
+//   width: 200px;
+//   height: 200px;
+// //    margin 0  auto
+// }
+
+.tr {
+  //align-items: center;
 }
 
-tr {
-  border-color: black;
-  border-style: solid;
+td  {
+  // border: 1px solid black;
+  // border-style: black;
 }
 
-td {
-  border-color: black;
-  border-style: solid;
+// tr {
+//    border-color: black;
+//    border-style: solid;
+// }
+//
+// td {
+//    border-color: black;
+//    border-style: solid;
+// }
+.zeroButtonTd{
+  border-style: hidden hidden solid hidden;
+  border-color: blue;
+}
+
+.firstButtonTd{
+  border-style: hidden solid solid solid;
+  border-color: blue;
+}
+
+.secondButtonTd{
+   border-style: hidden hidden solid hidden;
+   border-color: blue;
+ }
+
+.thirdButtonTd{
+  border-style: hidden hidden solid hidden;
+  border-color: blue;
+}
+
+.fourthButtonTd{
+  border-style: hidden solid solid solid;
+  border-color: blue
+}
+
+.fifthButtonTd {
+  border-style: hidden hidden solid hidden;
+  border-color: blue;
+}
+
+ .sixthButtonTd {
+  border-style: hidden solid hidden hidden;
+  border-color: blue;
+}
+
+.seventhButtonTd{
+  border-style: hidden solid hidden solid;
+  border-color: blue;
+}
+
+.eightButtonTd{
+  border-style: hidden solid solid hidden;
+  border-color: blue;
 }
