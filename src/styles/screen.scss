@@ -15,78 +15,42 @@ body {
   height: 100%;
   width: 100%;
   display: flex;
-  flex-direction: space-around;
   flex-direction: column;
   align-items: center;
-  //align-items: center;
-  // justify-content: center;
-  // al: center;
-  // background-color: green;
+  margin: 0;
+  padding: 0;
 }
 
 .container1{
   width: 100%;
   height: 100%;
   align-items: center;
-//  justify-content: space-around;
   text-align: center;
   position: relative;
-  // display: flex;
-  // flex-direction: column;
-  // text-align: center;
-  //text-align: center;
+  padding: 0;
+  margin: 0;
 }
 
 .container2{
   width: 100%;
   height: 100%;
   align-items: center;
-//  justify-content: space-around;
   text-align: center;
-  // display: flex;
-  // flex-direction: column;
-  // text-align: center;
-  //text-align: center;
 }
 
 table {
   width: 200px;
   height: 200px;
   margin: 0 auto;
+  padding: 0;
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  margin: auto;
-  // border-collapse: collapse;
-//  border: 1px solid black;
-}
-//
-// .flex-item{
-//   width: 200px;
-//   height: 200px;
-// //    margin 0  auto
-// }
-
-.tr {
-  //align-items: center;
+//  margin: 0 0;
 }
 
-td  {
-  // border: 1px solid black;
-  // border-style: black;
-}
-
-// tr {
-//    border-color: black;
-//    border-style: solid;
-// }
-//
-// td {
-//    border-color: black;
-//    border-style: solid;
-// }
 .zeroButtonTd{
   border-style: hidden hidden solid hidden;
   border-color: blue;
@@ -118,7 +82,7 @@ td  {
 }
 
  .sixthButtonTd {
-  border-style: hidden solid hidden hidden;
+  border-style: hidden hidden hidden hidden;
   border-color: blue;
 }
 
@@ -130,4 +94,27 @@ td  {
 .eightButtonTd{
   border-style: hidden solid solid hidden;
   border-color: blue;
+}
+
+  button {
+  width: 60px;
+  height: 45px;
+  background: transparent;
+  border: transparent;
+  padding: 0;
+  //display: none;
+}
+
+.resetButton {
+ width: 60px;
+ height: 45px;
+// background: transparent;
+ border: solid;
+ border-radius: 10px;
+ border-color: blue;
+ position: absolute;
+}
+
+.container2{
+  position: absolute;
 }
