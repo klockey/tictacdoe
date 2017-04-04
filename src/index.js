@@ -2,9 +2,11 @@ if (process.env.NODE_ENV !== 'production') require('./index.html')
 import './styles/screen.scss'
 
 // let textAnswer = document.querySelector('div.container2')
-const buttons = document.querySelectorAll('button')
+const buttons = document.querySelectorAll('tr button')
+const whosTurn = document.querySelector('.whosTurn')
 
 let xturn = true
+let numberOfTurns = 0
 
 let gridData = [
   ['', '', ''],
@@ -60,15 +62,30 @@ const handleButtonClick = (event) => {
       break
     default: console.log('error')
   }
+
   xturn = (xturn === true ? !xturn : true)
+  console.log(xturn)
+  numberOfTurns++
+  console.log('number of turns' + numberOfTurns)
+  if (numberOfTurns % 2 === 0) {
+    whosTurn.innerText = 'X Turn'
+  } else {
+    whosTurn.innerText = 'O Turn'
+  }
+
   if (calculateWinner() === 'xwon') {
-  //  textAnswer.textContent = 'X WINS!!'
-    // resetGame()
+    alert('X won!')
     console.log('xwon')
+    resetGame()
   } else if (calculateWinner() === 'owon') {
-  //  textAnswer.textContent = 'O WINS!!'
+    alert('O won!')
     console.log('owon')
-  //  resetGame()
+    resetGame()
+  } else if (numberOfTurns === 9) {
+    alert('Tie!')
+    resetGame()
+  } else {
+    console.log('error')
   }
 }
 
@@ -116,19 +133,26 @@ const calculateWinner = () => {
   // console.log('xxx won on first row')
 }
 
-const resetGame = () => {
+const resetGame = (event) => {
+//  if (event.target.innerText === 'resetGame') {
   for (let i = 0; i < buttons.length; i++) {
-    // buttons[i].textContent = ''
-    buttons[i].enabled = true
+  //  buttons[i].enabled = true
+    buttons[i].innerText = ''
+    console.log('in reset game')
   }
+  if (document.readyState === 'complete') {
+    console.log('complete')
+  }
+  location.reload()
 }
 
 const main = () => {
-  const buttons = document.querySelectorAll('button')
   for (let i = 0; i < buttons.length; i++) {
     buttons[i].enabled = true
     buttons[i].addEventListener('click', handleButtonClick)
   }
+  const resetButton = document.querySelector('.alignItems button')
+  resetButton.addEventListener('click', resetGame)
 }
 
 document.addEventListener('DOMContentLoaded', main)

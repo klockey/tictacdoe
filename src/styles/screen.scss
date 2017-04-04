@@ -10,75 +10,67 @@ html {
 
 body {
   @include font-smoothing(on);
-  margin: 0;
   font: $base-text-size / 1 $base-font-family;
   height: 100%;
   width: 100%;
+  margin: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0;
-  padding: 0;
-}
-
-.container1{
-  width: 100%;
-  height: 100%;
-  align-items: center;
-  text-align: center;
-  position: relative;
-  padding: 0;
-  margin: 0;
-}
-
-.container2{
-  width: 100%;
-  height: 100%;
-  align-items: center;
-  text-align: center;
 }
 
 table {
   width: 200px;
   height: 200px;
-  margin: 0 auto;
   padding: 0;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-//  margin: 0 0;
+  margin: 15% auto;
+}
+
+.resetButton {
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+
+.whosTurn {
+  //margin: 100% auto;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  align-self: center;
 }
 
 .zeroButtonTd{
   border-style: hidden hidden solid hidden;
-  border-color: blue;
+  border-color: #008744;
 }
 
 .firstButtonTd{
   border-style: hidden solid solid solid;
-  border-color: blue;
+  border-color: 	#0057e7;
 }
 
 .secondButtonTd{
    border-style: hidden hidden solid hidden;
-   border-color: blue;
+   border-color: #ffa700;
  }
 
 .thirdButtonTd{
   border-style: hidden hidden solid hidden;
-  border-color: blue;
+  border-color: #008744;
 }
 
 .fourthButtonTd{
   border-style: hidden solid solid solid;
-  border-color: blue
+  border-color: #d62d20;
 }
 
 .fifthButtonTd {
   border-style: hidden hidden solid hidden;
-  border-color: blue;
+  border-color: 	#ffa700;
 }
 
  .sixthButtonTd {
@@ -93,7 +85,7 @@ table {
 
 .eightButtonTd{
   border-style: hidden solid solid hidden;
-  border-color: blue;
+  border-color: #d62d20;
 }
 
   button {
@@ -113,7 +105,13 @@ table {
  border-radius: 10px;
  border-color: blue;
  position: absolute;
+ margin: 0;
 }
+
+.alignItems{
+  align-items: center;
+  margin: 0;
+ }
 
 .container2{
   position: absolute;
