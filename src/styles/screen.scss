@@ -11,12 +11,12 @@ html {
 body {
   @include font-smoothing(on);
   font: $base-text-size / 1 $base-font-family;
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  // height: 100%;
+  // width: 100%;
+  // margin: 0;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
 }
 
 table {
@@ -26,21 +26,14 @@ table {
   margin: 15% auto;
 }
 
-.resetButton {
-  width: 30px;
-  height: 30px;
-  margin: 0;
-  width: 100%;
-  height: 100%;
-  padding: 0;
-}
+
 
 .whosTurn {
   //margin: 100% auto;
   margin: 0;
-  width: 100%;
-  height: 100%;
-  align-self: center;
+  // width: 100%;
+  // height: 100%;
+//  align-self: center;
 }
 
 .zeroButtonTd{
@@ -98,18 +91,18 @@ table {
 }
 
 .resetButton {
- width: 60px;
+ width: 75px;
  height: 45px;
 // background: transparent;
  border: solid;
  border-radius: 10px;
  border-color: blue;
- position: absolute;
- margin: 0;
+ // position: absolute;
+ margin: 15px;
 }
 
 .alignItems{
-  align-items: center;
+  text-align: center;
   margin: 0;
  }
 
