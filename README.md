@@ -1,4 +1,4 @@
 # Tictacdoe
 
 
-Simple game written in vanilla javascript.
+**Simple game** written in vanilla javascript.
